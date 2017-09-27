@@ -1,0 +1,228 @@
+/*------------------------------------------------
+@Filename:  index.less
+@Description:   小说样式
+@author:    LJL
+@updatatime:
+------------------------------------------------*/
+@import "./variables.less";
+// @import "./layer.less";
+@import "./common.less";
+.search{
+    padding: 50/@rem 20/@rem 20/@rem;
+    input{
+        display: inline-block;
+        width: 72%;
+        margin-right: 4%;
+        border:1px solid #eee;
+        padding: 0 12/@rem;
+        line-height: 68/@rem;
+        border-radius: 10/@rem;
+        font-size: 26/@rem;
+        color: #666;
+        box-sizing: border-box;
+    }
+    .search-btn{
+        display: inline-block;
+        width: 22%;
+        background:#2A7CE7;
+        height: 68/@rem;
+        line-height: 68/@rem;
+        border-radius: 10/@rem;
+        font-size: 30/@rem;
+        text-align: center;
+        color: #fff;
+    }
+}
+.m-catalog{
+    margin-top: 20/@rem;
+    .list-item{
+        width: 45%;
+        display: inline-block;
+        margin: 28/@rem 2%;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        height: 60/@rem;
+        line-height: 60/@rem;
+        border-radius: 99px;
+        text-align: center;
+        a{
+            font-size: 28/@rem;
+            padding-left: 20/@rem;
+        }
+    }
+}
+
+// 列表
+.m-list{
+    .list-item{
+        margin-top: .2rem;
+        height: 68/@rem;
+        line-height: 68/@rem;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        font-size: 28/@rem;
+        a{
+            padding-left: 20/@rem;
+        }
+        .author{
+            color: #999;
+            font-size: 26/@rem;
+        }
+    }
+}
+.m-page{
+    .page{
+        height: auto;
+        margin-top: 30/@rem;
+        text-align: center;
+        a{
+            text-align: center;
+            padding: 12/@rem 35/@rem;
+            margin:0 8/@rem;
+            border-radius: 3px;
+            background: #2A7CE7;
+            color: #fff;
+        }
+    }
+    .page-info{
+        padding: 10/@rem 0;
+        text-align: center;
+        font-size: 26/@rem;
+        line-height: 60/@rem;
+        color: #999;
+    }
+}
+// 目录
+.m-info{
+    background: #fff;
+    margin-top: 20/@rem;
+    border-bottom: 1px solid #eee;
+    padding: 20/@rem;
+    .info-thumb{
+        width: 200/@rem;
+        float: left;
+        margin-right: 20/@rem;
+        img{
+            display: block;
+            width: 200/@rem;
+            min-height: 220/@rem;
+        }
+    }
+    .info-text{
+        h1{
+            line-height: 1.8;
+            font-size: 30/@rem;
+            font-weight: bold;
+        }
+        li{
+            font-size: 24/@rem;
+            line-height: 1.7;
+        }
+    }
+}
+.m-intro{
+    border-bottom: 1px solid #ddd;
+    .intro-cnt{
+        background: #fff;
+        font-size: 28/@rem;
+        padding: 20/@rem;
+        line-height: 1.5;
+    }
+}
+
+.m-dir{
+    .m-dir-tit{
+        height: 75/@rem;
+        padding-left: 20/@rem;
+        line-height: 75/@rem;
+        font-size: 28/@rem;
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+    }
+    .dir-list{
+        background: #fff;
+        li{
+            // margin: 0 20/@rem;
+            height: 68/@rem;
+            line-height: 68/@rem;
+            border-bottom: 1px solid #eee;
+            font-size: 28/@rem;
+            a{
+                display: block;
+                overflow: hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+                padding:0 20/@rem;
+            }
+        }
+    }
+}
+
+// 详情页
+.m-show{
+    // margin-top: 20/@rem;
+    background: #fff;
+    .show-cnt{
+        padding: 20/@rem;
+        font-size: 30/@rem;
+        p{
+            padding: 8/@rem 0;
+            line-height: 1.6;
+            text-indent: 2em;
+        }
+    }
+}
+.show-page{
+    width: 100%;
+    height: auto;
+    a{
+        display: inline-block;
+        float: left;
+        width: 36%;
+        text-align: center;
+        background: #2A7CE7;
+        height: 68/@rem;
+        line-height: 68/@rem;
+        color: #fff;
+        box-sizing: border-box;
+        font-size: 28/@rem;
+        &.show-dir{
+            width: 28%;
+            border: 1px solid #e3e3e3;
+            border-top:none;
+            border-bottom:none;
+        }
+    }
+}
+
+// 搜索
+.m-search{
+    .info-item{
+        display: block;
+        background: #fff;
+        margin-top: 20/@rem;
+        border-bottom: 1px solid #ddd;
+        padding: 20/@rem;
+        .info-thumb{
+            width: 200/@rem;
+            float: left;
+            margin-right: 20/@rem;
+            img{
+                display: block;
+                width: 200/@rem;
+                min-height: 220/@rem;
+            }
+        }
+        .info-text{
+            stong{
+                line-height: 2;
+                font-size: 32/@rem;
+                font-weight: bold;
+            }
+            li{
+                font-size: 24/@rem;
+                line-height: 1.8;
+            }
+        }
+    }
+}
